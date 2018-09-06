@@ -1,0 +1,44 @@
+// program name: Sale of Coffee and Doughnuts
+// Purpose: Compute total amount of coffee and doughnut 
+//     bought by each customer and change if required
+// Author: Opeoluwa Akinyemi
+// Date last modified: 05-Sep-2018
+
+Start
+    // Coffee Variables and constants
+    Declare String Coffee // Type of coffee: Carmel, Black, PumpkinSpice
+    Declare Numeric CoffeePrice = 2.50 // Price of coffee
+
+    // Doughnut Variables and constants
+    Declare String Doughnut // Type of Doughnuts: Glaze, Chocolate, Strawberry
+    Declare Numeric DoughnutPrice = 3.00 // Price of Doughnut
+
+    // Payment
+    Declare Numeric TotalAmount // Total amount of Coffee and Doughnut
+    Declare Numeric CustomerPayment // Customer Payment
+    Declare Numeric CustomerChange // Customer Change
+
+    // Program heading
+    Display "Princess Coffee and Doughnut Shop" 
+
+    // Get customer purchase
+    Display "Select a Coffee(Carmel, Black, PumpkinSpice): "
+    Input Coffee
+    Display "Select a Doughnut(Glaze, Chocolate, Strawberry): "
+    Input Doughnut
+    
+    // Calculate Amount
+    totalAmount = CoffeePrice + DoughnutPrice
+    Display "Total Amount: $" + totalAmount
+
+    // Take customer payment
+    Display "Enter Customer Payment: "
+    Input CustomerPayment
+
+    // If change is required, calculate change and give customer change
+    CustomerChange = customerPayment - totalAmount
+    
+    // Print the receipt
+    // Thank the customer and end the program
+    Display "Thank you for shopping. Good-bye!"
+Stop
